@@ -8,7 +8,7 @@ export default function validateSpeechNumber(guess, ruleNumbers){
     } else if (invalidGuessRange(userGuess, ruleNumbers)){
         return `Número fora do range, o número secreto está entre ${ruleNumbers.minValue} e ${ruleNumbers.maxValue}`;
     } else if (userGuess == ruleNumbers.secretNumber){
-        return 'Parabéns você acertou <i class="fa-solid fa-check"></i>';
+        return 'Parabéns você acertou <i class="fa-solid fa-check"></i><br><i id="reloadGame" class="fa-solid fa-rotate-right"></i>';
     } else if (itsHigher(userGuess, ruleNumbers)){
         return 'O número é maior <i class="fa-solid fa-up-long"></i>'
     } else {

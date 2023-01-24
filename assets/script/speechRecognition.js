@@ -24,5 +24,10 @@ function showGuess(speakedNumber, guess, returnMessege){
         <span class="box">${speakedNumber}</span>
         <div>${returnMessege}</div>
     `
+    if(returnMessege.includes('\n<i id="reloadGame" class="fa-solid fa-rotate-right"></i>')){
+        document.querySelector("#reloadGame").addEventListener("click", e => {
+            window.location.reload();
+        })
+    }
 }
 

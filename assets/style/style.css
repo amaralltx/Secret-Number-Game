@@ -15,20 +15,37 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
+    margin: 0px;
     font-family: var(--font-family);
+}
+.borderTop, .borderBottom{
+    background-color: var(--primary-color);
+    height: 2em;
+    width: 100%;
+    position: absolute;
+}
+
+.borderBottom{
+    bottom: 0;
+}
+
+.borderTop {
+    top: 0;
 }
 
 h1 {
+    padding: 8px;
     font-size: 5em;
 }
 
 h3 {
+    padding: 8px;
     font-size: 2em;
     margin-top: 20px;
 }
 
 .mensagem {
+    padding: 8px;
     font-size: 1.5em;
     margin-top: 40px;
 }
@@ -41,3 +58,26 @@ h3 {
     margin: 20px;
 }
 
+.fa-rotate-right{
+    margin-top: 0.5em;
+    font-size: 3em;
+}
+
+.fa-rotate-right:hover{
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+    transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .mensagem {
+        font-size: 1em;
+        margin-top: 24px;
+    }
+}
