@@ -25,12 +25,27 @@ body {
     position: absolute;
 }
 
+.borderTop {
+    top: 0;
+}
+
 .borderBottom{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
 }
 
-.borderTop {
-    top: 0;
+a{
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 h1 {
