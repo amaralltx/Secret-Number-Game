@@ -81,6 +81,7 @@ h3 {
 }
 
 .fa-rotate-right{
+    display: none;
     margin: 0.5em;
     font-size: 3em;
 }

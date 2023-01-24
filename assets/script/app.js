@@ -19,8 +19,10 @@ const $elementMaxValue = document.querySelector("#max-value");
 $elementMinValue.innerHTML = ruleNumbers.minValue;
 $elementMaxValue.innerHTML =  ruleNumbers.maxValue;
 
-
 const $guess = document.querySelector('#guess');
 
-
 catchSpeech($guess, validateSpeechNumber, ruleNumbers);
+
+document.querySelector("#reloadGame").addEventListener("click", e => {
+    window.location.reload();
+})

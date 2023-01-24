@@ -23,11 +23,10 @@ function showGuess(speakedNumber, guess, returnMessege){
         <div>Você disse</div>
         <span class="box">${speakedNumber}</span>
         <div>${returnMessege}</div>
+        <i id="reloadGame" class="fa-solid fa-rotate-right"></i>
     `
-    if(returnMessege.includes('\n<i id="reloadGame" class="fa-solid fa-rotate-right"></i>')){
-        document.querySelector("#reloadGame").addEventListener("click", e => {
-            window.location.reload();
-        })
+    if(returnMessege.includes('Parabéns')){
+        document.querySelector("#reloadGame").style.display = "block";
     }
 }
 
